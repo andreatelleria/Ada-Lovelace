@@ -2,7 +2,7 @@
 * {
     box-sizing: border-box;
 }
-/*Utilizamos el selector de etiqueta body para establecer el padding izquierdo*/
+/*Utilizamos el selector de etiqueta body para aumentar tamaño de padding izquierdo*/
 body {
     padding-left: 10px;
 }
@@ -12,29 +12,28 @@ body {
   font-weight: normal;
   margin-bottom: 3px;
 }
-/*Utilizamos el selector de clase .biography que hace referencia al contenido principal del documento y le damos un display inline-block para que la caja que ocupa table entre a la misma altura. Establecemos un nuevo ancho; y tipo, tamaño y altura de letra*/
-.biography {
+/*Utilizamos el selector de clase .biography que hace referencia al contenido principal del documento le damos un display inline-block para que la caja que ocupa nuestra tabla entre a la misma altura. Además, establecemos un nuevo ancho de la caja; y tipo, tamaño y altura de letra. El selector de clase .additionalInfo también recive los mismos valores*/
+.biography, .additionalInfo {
   width: 78%;
   font-family: sans-serif;
   font-size: 14px;
   line-height: 1.5;
   display: inline-block;
-
 }
-/*Utilizamos el selector de clase .biography y la pseudo-clase :first-child de p para aplicar cambios solo al primer párrafo*/
+/*Utilizamos un selector descendente (selector de clase .biography y la pseudo-clase :first-child de p) para aplicar cambios solo al primer párrafo*/
 .biography p:first-child {
   font-size: 13px;
   margin-top: 1px;
   margin-bottom: 20px;
 }
-/*Utilizamos el selector de clase .summary para establecer el ancho, tipo y tamaño de letra, y alineación vertical*/
+/*Utilizamos el selector de clase .summary para establecer el ancho; tipo, altura y tamaño de letra; y la alineación vertical. También le damos un display inline-block para que se ubique a la altura de .biography*/
 .summary {
   width: 270px;
   font-family: sans-serif;
+  line-height: 1.4;
   font-size: 12px;
   vertical-align: top;
   display: inline-block;
-
 }
 /*Utilizamos el selector de clase .summary-table para establecer el ancho del borde, padding y color de fondo de nuestra tabla*/
 .summary-table {
@@ -42,26 +41,51 @@ body {
   padding: 1px;
   background-color: #f8f9fa;
 }
-/*Utilizamos el selector de clase .summary-table y los selectores de etiqueta thead y th para establecer el color de fondo, padding superior e inferior, y tamaño de letra del elemento*/
+/*Utilizamos un selector descendente (selector de clase .summary-table y los selectores de etiqueta thead y th) para establecer el color de fondo, padding superior e inferior, y tamaño de letra de th*/
 .summary-table thead th {
   background-color: #b0c4de;
   padding-top: 3px;
   padding-bottom: 3px;
   font-size: 14px;
 }
-/**/
+/*Utilizamos un selector descendente (selector de clase .summary-table, selector de etiqueta tbody y la pseudo-clase :first-child de tr) para aplicar cambios solo a la primera fila de nuestra tabla en tbody*/
 .summary-table tbody tr:first-child {
   text-align: center;
 }
-
+/*Utilizamos un selector descendente (selector de clase .summary-table, y selectores de etiqueta tbody y th) para alinear el texto a la izquierda*/
 .summary-table tbody th {
   text-align: left;
 }
-
+/*Utilizamos el selector de etiqueta img para establecer el ancho de nuestra imagen*/
 img {
   width: 220px;
 }
-
+/*Utilizamos el selector de clase .imageText para reducir el margen superior del texto que aparece debajo de nuestra imagen en la tabla*/
 .imageText {
   margin-top: 1px;
+}
+/*Utilizamos el selector de clase .listTitle para centrarlo*/
+.listTitle {
+  text-align: center;
+}
+/*Utilizamos el selector de etiqueta li para aumentar el margen de todos los elementos li en el documento*/
+li {
+  margin: 3.5px;
+}
+/*Utilizamos el selector de etiqueta section, que está compuesto por un párrafo y una lista, para establecer su ancho, borde, color de fondo, reducir padding izquierdo, y cambiar tamaño de letra*/
+section {
+  width: 270px;
+  font-size: 12px;
+  border: 1px solid #a2a9b1;
+  background-color: #f8f9fa;
+  padding-left: 0px;
+}
+/*Utilizamos el selector de etiqueta a para cambiar de color el texto de los links y retirar el subrayado predefinido*/
+a {
+  color: #0645ad;
+  text-decoration: none;
+}
+/*Utilizamos la pseudo-clase a:hover para implementar el subrayado de los links cuando pasamos el cursor sobre ellos*/
+a:hover {
+  text-decoration: underline;
 }

@@ -5,7 +5,7 @@ Este repositorio contiene la biografía de Ada Lovelace, siguiendo el modelo de 
 
 La página se mostrará de la siguiente manera:
 
-![Sin titulo](assets/imgs/CapturaLovelace.png)  
+![Sin titulo](assets/imgs/CapturaAdaLovelace.png)  
 
 
 #### Herramientas utilizadas:
