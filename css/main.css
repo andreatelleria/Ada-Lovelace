@@ -1,0 +1,67 @@
+/*Utilizamos un selector universal para establecer el valor de box-sizing a border-box en todas las cajas*/
+* {
+    box-sizing: border-box;
+}
+/*Utilizamos el selector de etiqueta body para establecer el padding izquierdo*/
+body {
+    padding-left: 10px;
+}
+/*Utilizamos el selector de clase .firstHeading que hace referencia al h1 para establecer el tipo de letra y grosor del texto, y también para reducir el margen inferior*/
+.firstHeading {
+  font-family: Lucida;
+  font-weight: normal;
+  margin-bottom: 3px;
+}
+/*Utilizamos el selector de clase .biography que hace referencia al contenido principal del documento y le damos un display inline-block para que la caja que ocupa table entre a la misma altura. Establecemos un nuevo ancho; y tipo, tamaño y altura de letra*/
+.biography {
+  width: 78%;
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  display: inline-block;
+
+}
+/*Utilizamos el selector de clase .biography y la pseudo-clase :first-child de p para aplicar cambios solo al primer párrafo*/
+.biography p:first-child {
+  font-size: 13px;
+  margin-top: 1px;
+  margin-bottom: 20px;
+}
+/*Utilizamos el selector de clase .summary para establecer el ancho, tipo y tamaño de letra, y alineación vertical*/
+.summary {
+  width: 270px;
+  font-family: sans-serif;
+  font-size: 12px;
+  vertical-align: top;
+  display: inline-block;
+
+}
+/*Utilizamos el selector de clase .summary-table para establecer el ancho del borde, padding y color de fondo de nuestra tabla*/
+.summary-table {
+  border: 1px solid #a2a9b1;
+  padding: 1px;
+  background-color: #f8f9fa;
+}
+/*Utilizamos el selector de clase .summary-table y los selectores de etiqueta thead y th para establecer el color de fondo, padding superior e inferior, y tamaño de letra del elemento*/
+.summary-table thead th {
+  background-color: #b0c4de;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 14px;
+}
+/**/
+.summary-table tbody tr:first-child {
+  text-align: center;
+}
+
+.summary-table tbody th {
+  text-align: left;
+}
+
+img {
+  width: 220px;
+}
+
+.imageText {
+  margin-top: 1px;
+}
